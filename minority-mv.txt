@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 小众视频过滤规则
-! Version: 202411261
+! Version: 202502161
 ! Expires: 1 day
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -11,14 +11,10 @@
 ||stc.iqiyipic.com/js/sdkpack/vippay.js
 ||stc.iqiyipic.com/js/sdkpack/barrage
 
-! ||cp31.ott.cibntv.net/*/ad/X*.ts?$xhr,redirect=noop-0.1s.mp3,domain=v.youku.com
-v.youku.com##.vip_info,#uerCenter,#youkubarrage-controller,li.fn-phonewatch
-||acs.youku.com/h5/mopen.youku.danmu.
-
 www.bilibili.com##.pop-live-small-mode
 ||api.bilibili.com/x/click-interface/click/$xhr
-||hdslb.com/bfs/seed/log/report/log-reporter.js
-||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/bili-user-fingerprint.min.js^$script
+||hdslb.com/bfs/seed/log/report/log-reporter.js^$script
+||hdslb.com^$subdocument
 
 ||beacon.qq.com^$ping
 ||trace.qq.com^$image,ping
@@ -51,17 +47,16 @@ www.huya.com##.player-banner-gift,#player-marquee-wrap
 ||a.msstatic.com/huya/main3/components/GiftDrawEffect/$script
 ||a.msstatic.com/huya/main3/components/OnTVLottery/$script
 
-*.gif|$image,domain=91meijutv.com|bimiacg4.net|dk95.com|tvyb03.com
+*.gif|$image,domain=91meijutv.com|bimiacg4.net|dk95.com|tvyb03.com|tvyun03.com
 ! 禁用左右快捷键 nangua99.com,xxdm2.com##+js(set,jQuery.fn.keydown,trueFunc)
-88mv.org,91meijutv.com,olevod.com,tvyb03.com##a[target=_blank][href^=http]
+88mv.org,91meijutv.com,olevod.com,tvyb03.com,tvyun03.com##a[target=_blank][href^=http]
 91meijutv.com##.dplayer-web-fullscreen-fix #player-sidebar
 91meijutv.com,gdzidong.com,yimj.cc##.dplayer-web-fullscreen-fix #player-sidebar-is
-91meijutv.com,gdzidong.com,mjwo.net,qdm66.com,tvyun01.com,tvyb03.com##.close-box.tips
 
-bimiacg4.net##+js(acis,Object.defineProperty,location.href)
+bimiacg4.net##+js(acs,Object.defineProperty,location.href)
 bimiacg4.net##.tuiguang,#bkcl
 
-! 低端影视 ddys.art .one
+! 低端影视 ddys.pro .one
 ddys.*##+js(set, Object.prototype.ads, null)
 ! ddys.*##+js(set, Object.prototype.nopreroll_, true)
 ddys.*##.cfa_popup:remove()
@@ -79,8 +74,6 @@ olevod.com##.pc-ads
 olevod.com###adsMaskBox
 ||static.olelive.com/uploads/file/$image
 
-qdm66.com###gongao
-! TVB云播  港台影视 www.hktvyb.vip
-tvyun01.com,tvyb03.com##+js(acis,document.writeln)
-! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.site age.tv www.kudm.vip www.dmtvw.com www.jujiso.com
+qdm8.com###gongao
+! www.916dm.fans www.qdm.plus 77dm.vip mgtv.cc dm84.site age.tv www.kudm.vip www.dmtvw.com www.jujiso.com www.hktvyb.vip
 搜狐网络科技.中国
